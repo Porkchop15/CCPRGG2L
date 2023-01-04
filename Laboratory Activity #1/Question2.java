@@ -6,21 +6,16 @@ import java.io.IOException;
 public class Question2 {
   public static void main(String[] args) throws IOException, FileNotFoundException{
 
-    // Locate the file dummy.txt
     try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Z3m\\.vscode\\files\\question 2\\Question2\\dummy.txt"))) {
       String text;
 
-    // Reads line from 0
     int lineCount = 0;
 
-      // read file from 0 to 5
       while ((text = br.readLine()) != null && lineCount < 5) {
         System.out.println(text);
 
-        // increment line count
         lineCount++;
 
-        //Close the file
         br.close();
 
       }
